@@ -3,3 +3,8 @@
 *.scssc
 *.DS_store
 .DS_store
+*.scssc
+
+public/.DS_Store
+
+public/.sass-cache/4995b67dbda0e79eff3ecd56dac76d0394435bb9/screen.scssc
