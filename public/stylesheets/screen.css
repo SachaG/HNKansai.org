@@ -502,7 +502,7 @@ body {
   background-size: 88px 100px;
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.5;
-  font-family: 'Bitter', serif; }
+  font-family: 'Bitter', 'メイリオ',Meiryo,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ＭＳ Ｐゴシック', sans-serif; }
 
 /* line 18, ../sass/screen.scss */
 a {
@@ -514,14 +514,80 @@ a {
   a:hover {
     color: white; }
 
-/* line 27, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
+.language-toggle a {
+  display: block;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  width: 100px;
+  margin: 20px auto 0 auto; }
+  /* line 37, ../sass/screen.scss */
+  .en .language-toggle a.en, .jp .language-toggle a.jp {
+    display: none; }
+
+/* line 42, ../sass/screen.scss */
 .container {
   width: 440px;
-  margin: 100px auto 20px auto;
-  text-align: center; }
+  margin: 60px auto 20px auto;
+  text-align: center;
+  position: relative;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+  z-index: 1; }
+  /* line 49, ../sass/screen.scss */
+  .container .card {
+    width: 100%;
+    height: 100%;
+    background: none;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d; }
+    /* line 54, ../sass/screen.scss */
+    .container .card.animate {
+      -webkit-transition: all 600ms linear;
+      -moz-transition: all 600ms linear;
+      -o-transition: all 600ms linear;
+      transition: all 600ms linear; }
+    /* line 57, ../sass/screen.scss */
+    .container .card .content {
+      background: none;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+      -o-backface-visibility: hidden;
+      backface-visibility: hidden; }
+      /* line 63, ../sass/screen.scss */
+      .container .card .content.jp-content {
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg); }
+    /* line 67, ../sass/screen.scss */
+    .jp .container .card {
+      -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
+      -o-transform: rotateY(180deg);
+      transform: rotateY(180deg); }
 
-/* line 32, ../sass/screen.scss */
-#logo {
+/* line 91, ../sass/screen.scss */
+.logo {
   background: url("../images/logo.png");
   background-size: 310px 105px;
   width: 310px;
@@ -531,28 +597,28 @@ a {
   text-shadow: none;
   color: transparent; }
 
-/* line 40, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 .tagline {
   font-weight: normal;
   color: rgba(255, 255, 255, 0.2);
   margin: 0 0 10px 0; }
 
-/* line 45, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 .intro {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
   font-size: 18px;
   line-height: 1.7;
   margin: 0 0 20px 0; }
 
-/* line 51, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 .links {
   margin: 0;
   padding: 0;
   list-style-type: none; }
-  /* line 55, ../sass/screen.scss */
+  /* line 114, ../sass/screen.scss */
   .links li {
     margin-bottom: 10px; }
-    /* line 57, ../sass/screen.scss */
+    /* line 116, ../sass/screen.scss */
     .links li a {
       background: rgba(255, 255, 255, 0.1);
       display: block;
@@ -570,6 +636,6 @@ a {
       -o-transition: ease-out background 600ms 0ms;
       transition: ease-out background 600ms 0ms;
       font-size: 24px; }
-      /* line 66, ../sass/screen.scss */
+      /* line 125, ../sass/screen.scss */
       .links li a:hover {
         background: rgba(255, 255, 255, 0.3); }
