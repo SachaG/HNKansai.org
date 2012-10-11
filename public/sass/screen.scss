@@ -3,4 +3,69 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
+@import "partials/normalize";
+@import "compass/css3";
+@import "compass/typography/lists/horizontal-list";
+@import "partials/mixins";
+
+body{
+	background:#3a3531 url("../images/bg.png");
+	background-size:88px 100px;
+	color:white(0.8);
+	line-height:1.5;
+	font-family: 'Bitter', serif;	
+}
+a{
+	text-decoration:none;
+	&:link, &:visited, &:active{
+		color:#ff6600;
+	}
+	&:hover{
+		color:white;
+	}
+}
+.container{
+	width:440px;
+	margin:100px auto 20px auto;
+	text-align:center;
+}
+#logo{
+	background:url("../images/logo.png");
+	background-size:310px 105px;
+	width:310px;
+	height:105px;
+	margin:0 auto 0 auto;
+	@include hide-text2;
+}
+.tagline{
+	font-weight:normal;
+	color:white(0.2);
+	margin:0 0 10px 0;	
+}
+.intro{
+	text-shadow:0px 1px 2px black(0.75);
+	font-size:18px;
+	line-height:1.7;
+	margin:0 0 20px 0;	
+}
+.links{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	li{
+		margin-bottom:10px;
+		a{
+			background:white(0.1);
+			display:block;
+			text-align:center;
+			height:60px;
+			line-height:60px;
+			@include border-radius(3px);
+			@include single-transition(ease-out, background, 600ms, 0ms);
+			font-size:24px;
+			&:hover{
+				background:white(0.3);
+			}
+		}
+	}
+}

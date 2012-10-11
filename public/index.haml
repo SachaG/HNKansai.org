@@ -1,0 +1,30 @@
+!!!
+/[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7">
+/[if IE 7] <html class="no-js lt-ie9 lt-ie8">
+/[if IE 8] <html class="no-js lt-ie9">
+/ [if gt IE 8]><!
+%html.no-js
+  / <![endif]
+  %head
+    %meta{:charset => "utf-8"}
+      %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+        %title Hacker News Kansai Meetup
+        %meta{:content => "", :name => "description"}
+          %meta{:content => "width=device-width", :name => "viewport"}
+            %link{:href => "http://fonts.googleapis.com/css?family=Bitter:400,700,400italic", :rel => "stylesheet", :type => "text/css"}/
+            %link{:href => "stylesheets/screen.css", :rel => "stylesheet"}
+  %body
+    .container
+      %h1#logo Hacker News Kansai Meetup
+      %h2.tagline Hacker News Kansai Meetup
+      %p.intro HNKansai is a meetup based around <a href="http://news.ycombinator.com" target="_blank">Hacker News</a>.<br/> Every month, we get together in Kansai to talk about technology, design, games, and startups. Come join us!
+      %ul.links
+        %li
+          %a{:href => "http://news.hnkansai.org", :target => "_blank"} News
+        %li
+          %a{:href => "http://hnkansai.doorkeeper.jp", :target => "_blank"} Event Info
+        %li
+          %a{:href => "http://twitter.com/hnkansai", :target => "_blank"} @HNKansai on Twitter
+    %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"}
+    :javascript
+      window.jQuery || document.write('<\/script>')

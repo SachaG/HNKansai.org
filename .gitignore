@@ -1,0 +1,5 @@
+.sass-cache
+.sass-cache/*
+*.scssc
+*.DS_store
+.DS_store
