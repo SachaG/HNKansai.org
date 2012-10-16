@@ -52,3 +52,9 @@
     :javascript
       window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.8.0.min.js"><\/script>')
     %script{:src => "javascripts/main.js"}
+    %script{:src => "//static.getclicky.com/js", :type => "text/javascript"}
+    :javascript
+      try{ clicky.init(100537079); }catch(e){}
+    %noscript
+      %p
+        %img{:alt => "Clicky", :height => "1", :src => "//in.getclicky.com/100537079ns.gif", :width => "1"}/
