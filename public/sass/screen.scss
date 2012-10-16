@@ -107,6 +107,15 @@ a{
 	line-height:1.7;
 	margin:0 0 20px 0;	
 }
+.next-event{
+	background:black(0.3);
+	display:block;
+	text-align:center;
+	@include border-radius(3px);
+	font-size:18px;
+	padding:20px;
+	margin-bottom:10px;
+}
 .links{
 	margin:0;
 	padding:0;

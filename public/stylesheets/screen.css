@@ -611,14 +611,28 @@ a {
   margin: 0 0 20px 0; }
 
 /* line 110, ../sass/screen.scss */
+.next-event {
+  background: rgba(0, 0, 0, 0.3);
+  display: block;
+  text-align: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 20px;
+  margin-bottom: 10px; }
+
+/* line 119, ../sass/screen.scss */
 .links {
   margin: 0;
   padding: 0;
   list-style-type: none; }
-  /* line 114, ../sass/screen.scss */
+  /* line 123, ../sass/screen.scss */
   .links li {
     margin-bottom: 10px; }
-    /* line 116, ../sass/screen.scss */
+    /* line 125, ../sass/screen.scss */
     .links li a {
       background: rgba(255, 255, 255, 0.1);
       display: block;
@@ -636,6 +650,6 @@ a {
       -o-transition: ease-out background 600ms 0ms;
       transition: ease-out background 600ms 0ms;
       font-size: 24px; }
-      /* line 125, ../sass/screen.scss */
+      /* line 134, ../sass/screen.scss */
       .links li a:hover {
         background: rgba(255, 255, 255, 0.3); }
