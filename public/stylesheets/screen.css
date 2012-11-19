@@ -627,7 +627,7 @@ a {
 /* line 119, ../sass/screen.scss */
 .links {
   margin: 0;
-  padding: 0;
+  padding: 0 0 40px 0;
   list-style-type: none; }
   /* line 123, ../sass/screen.scss */
   .links li {
