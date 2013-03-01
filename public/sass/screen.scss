@@ -7,6 +7,7 @@
 @import "compass/css3";
 @import "compass/typography/lists/horizontal-list";
 @import "partials/mixins";
+@import "partials/hack";
 
 body{
 	background:#3a3531 url("../images/bg.png");
@@ -147,7 +148,7 @@ a{
 }
 .links{
 	margin:0;
-	padding:0 0 40px 0;
+	padding:0 0 10px 0;
 	list-style-type:none;
 	li{
 		margin-bottom:10px;
@@ -165,4 +166,8 @@ a{
 			}
 		}
 	}
+}
+footer{
+	padding:10px 0 20px 0;
+	text-align:center;
 }

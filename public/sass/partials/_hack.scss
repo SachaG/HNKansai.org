@@ -1,0 +1,31 @@
+.logo-hack{
+	margin:0;
+}
+section{
+	background:black(0.3);
+	display:block;
+	text-align:center;
+	@include border-radius(3px);
+	font-size:18px;
+	padding:20px 40px;
+	margin-bottom:10px;
+	position:relative;
+	h3{
+		position:absolute;
+		top:0;
+		left:0;
+		text-transform:uppercase;
+		background:black(0.5);
+		padding:3px 6px;
+		font-size:12px;
+		margin:0px;
+		@include border-radius(3px 0 0 0 );
+		color:white(0.6);
+	}
+	p{
+		margin:0;
+	}
+}
+ul.register{
+	padding:0;
+}
