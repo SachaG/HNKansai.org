@@ -497,10 +497,22 @@ table {
 
 /*================ MIXINS =================*/
 /* line 1, ../sass/partials/_hack.scss */
+.hnkansai {
+  display: block;
+  background: url("../images/logo.png");
+  background-size: 155px 52px;
+  width: 155px;
+  height: 52px;
+  margin: 0 auto 30px auto;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent; }
+
+/* line 10, ../sass/partials/_hack.scss */
 .logo-hack {
   margin: 0; }
 
-/* line 4, ../sass/partials/_hack.scss */
+/* line 13, ../sass/partials/_hack.scss */
 section {
   background: rgba(0, 0, 0, 0.3);
   display: block;
@@ -514,7 +526,7 @@ section {
   padding: 25px 50px;
   margin-bottom: 10px;
   position: relative; }
-  /* line 13, ../sass/partials/_hack.scss */
+  /* line 22, ../sass/partials/_hack.scss */
   section h3 {
     position: absolute;
     top: 0;
@@ -530,11 +542,11 @@ section {
     -o-border-radius: 3px 0 0 0;
     border-radius: 3px 0 0 0;
     color: rgba(255, 255, 255, 0.6); }
-  /* line 25, ../sass/partials/_hack.scss */
+  /* line 34, ../sass/partials/_hack.scss */
   section p {
     margin: 0; }
 
-/* line 29, ../sass/partials/_hack.scss */
+/* line 38, ../sass/partials/_hack.scss */
 ul.register {
   padding: 0; }
 
@@ -633,7 +645,6 @@ a {
     transform-style: preserve-3d; }
     /* line 110, ../sass/screen.scss */
     .csstransforms3d .container .card .content {
-      opacity: 1;
       -webkit-backface-visibility: hidden;
       -moz-backface-visibility: hidden;
       -ms-backface-visibility: hidden;

@@ -108,7 +108,7 @@ a{
 		.card{
 			@include transform-style(preserve-3d);
 			.content{
-				opacity:1;
+				// opacity:1;
 				@include backface-visibility(hidden);
 				&.jp-content {
 					@include rotateY(180deg);

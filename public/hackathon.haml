@@ -17,10 +17,11 @@
     %script{:src => "javascripts/modernizer.js"}
     %link{:href => "stylesheets/screen.css", :rel => "stylesheet"}
   %body.en
-    / .language-toggle
-    /   %a{:href=>"#en", :class=>"en"} English
-    /   %a{:href=>"#jp", :class=>"jp"} 日本語
+    .language-toggle
+      %a{:href=>"#en", :class=>"en"} English
+      %a{:href=>"#jp", :class=>"jp"} 日本語
     .container
+      %a.hnkansai{:href => "/"} HNKansai
       %h1.logo-hack
         %img{:src => '/images/kansai_hack_logo.png', :alt => 'Kansai Hack'}
       .card
@@ -47,20 +48,27 @@
           %footer
             Questions? Ideas? Want to say hi? <a href="mailto:hello@hnkansai.org">Contact us</a>.          
         .jp-content.content
-          %h2.tagline ハッカーニュース関西読者オフ会
-          %p.intro HNKansaiとは<a href="http://news.ycombinator.com" target="_blank">ハッカーニュース</a>関西読者のオフ会です。 毎月関西周辺で、技術、デザイン、ゲームやスタートアップなどの話をするためのミーティング・交流会を行います。HN関西に是非ご参加ください！
-          %p.next-event <strong>次のイベント:</strong><br/> <a href="http://hnkansai.doorkeeper.jp/events/2900">3月1日、19:00、京都</a>
-          %ul.links
+          %p.intro KansaiHack京都とは一日中のハッカソンということです。関西にいるの皆さんを集まって何か新しいものを作成するのチャンスです。
+          %ul.links.register
             %li
-              %a{:href => "http://news.hnkansai.org", :target => "_blank"} ニュース
-            %li
-              %a{:href => "http://hnkansai.doorkeeper.jp", :target => "_blank"} イベント情報
-            %li
-              %a{:href => "http://twitter.com/hnkansai", :target => "_blank"} @HNKansai もツイッターで！
-            %li
-              %a{:href => "http://sharypic.com/hnkansai2", :target => "_blank"} 写真        
-            %li
-              %a{:href => "http://www.youtube.com/channel/UCbxKJC9zZJ9C7YDYuZ3m59Q/videos?flow=grid&view=0", :target => "_blank"} ビデオ
+              %a{:href => "http://hnkansai.doorkeeper.jp/events/3017", :target => "_blank"} 登録する
+          %section.what
+            %h3 何ですか？
+            %p 開発テーマの技術に興味のある人等が、会議室やソファーがある場所などに集まり、みんなで一緒にソフトウェアやハードウェアをハックしまくって楽しみ、最後に開発したアプリケーションやサービスを参加者全員の前で紹介する
+          %section.when
+            %h3 いつ？
+            %p 2013年4月20日<br/>午前9時 - 午後9時。
+          %section.where
+            %h3 どこで？
+            %p <a href="https://maps.google.com/maps?q=vitei&hl=en&sll=35.003953,135.758218&sspn=0.006002,0.010386&hq=vitei&t=m&z=17">Vitei</a>、10Fヤサカ四条烏丸ビル<br/>函谷鉾町79下京区<br/>京都市600-8009
+          %section.why
+            %h3 なぜ？
+            %p 新しい人々と出会うために、新しいことを学び、最終的にあなたが常にやりたかったそのプロジェクトに取り組む。
+          %section.who
+            %h3 誰ですか？
+            %p KansaiHackは<a href="/">HNKansai</a>チームが編成されています。        
+          %footer
+            質問はありますか？アイデア？挨拶をしてみませんか？<a href="mailto:hello@hnkansai.org">声をかけてください</a>。
     %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"}
     :javascript
       window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.8.0.min.js"><\/script>')
