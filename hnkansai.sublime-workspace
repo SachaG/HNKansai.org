@@ -745,7 +745,6 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
 				{
@@ -760,8 +759,8 @@
 						"selection":
 						[
 							[
-								2918,
-								2847
+								1054,
+								1054
 							]
 						],
 						"settings":
