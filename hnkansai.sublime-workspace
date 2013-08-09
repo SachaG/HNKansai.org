@@ -355,7 +355,7 @@
 			"file": "public/index.haml",
 			"settings":
 			{
-				"buffer_size": 4271,
+				"buffer_size": 4285,
 				"line_ending": "Unix"
 			}
 		}
@@ -745,6 +745,7 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -752,15 +753,15 @@
 					"file": "public/index.haml",
 					"settings":
 					{
-						"buffer_size": 4271,
+						"buffer_size": 4285,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2822,
-								2822
+								2819,
+								2819
 							]
 						],
 						"settings":
@@ -770,7 +771,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 295.0,
+						"translation.y": 187.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
